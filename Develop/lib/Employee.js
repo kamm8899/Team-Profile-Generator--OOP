@@ -7,6 +7,7 @@ class Employee{
         this.emailAddress= emailAddress;
         this.officeNumber = officeNumber;
         this.name = name;
+        this.title = "Employee";
     }
 
 //getter to get name
