@@ -1,5 +1,5 @@
 // TODO: Write code to define and export the Employee class
-const Character = require('.test/Employee.test.js');
+//const Character = require('../test/Employee.test.js');
 
 class Employee{
     constructor(name, id, emailAddress, officeNumber){
