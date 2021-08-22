@@ -79,7 +79,7 @@ function engineerQuestions(employeeAnswers) {
               });
         };
 
-    function internQuesiton(){
+    function internQuestions(employeeAnswers){
         inquirer
             .prompt([{
                     type: "input",
@@ -95,6 +95,20 @@ function engineerQuestions(employeeAnswers) {
                 }
                     },
             ])
+            .then((internAnswers) => {
+                console.log(employeeAnswers);
+                console.log(internAnswers);
+                const intern = new Intern(
+                  employeeAnswers.name,
+                  employeeAnswers.id,
+                  employeeAnswers.emailAddress,
+                  internAnswers.school
+                );
+                employeeArray.push(intern);
+                console.log(employeeArray);
+                //go back to the intial prompt
+                roleQuestion();
+              });
         };
 
 function getEmployee(roleQuestion) {
@@ -143,7 +157,7 @@ function getEmployee(roleQuestion) {
             managerQuestions(employeeAnswers);
       } else if (roleQuestion === "Intern") {
         console.log("running intern");
-         internQuestions(employeeAnswers);
+        internQuestions(employeeAnswers);
       }
     });
 }
@@ -197,20 +211,4 @@ function member() {
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 
-// GIVEN a command-line application that accepts user input
-// WHEN I am prompted for my team members and their information
-// THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-// WHEN I click on an email address in the HTML
-// THEN my default email program opens and populates the TO field of the email with the address
-// WHEN I click on the GitHub username
-// THEN that GitHub profile opens in a new tab
-// WHEN I start the application
-// THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-// WHEN I enter the team manager’s name, employee ID, email address, and office number
-// THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-// WHEN I select the engineer option
-// THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-// WHEN I select the intern option
-// THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-// WHEN I decide to finish building my team
-// THEN I exit the application, and the HTML is generated
+
