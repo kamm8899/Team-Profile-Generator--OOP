@@ -44,6 +44,7 @@ function engineerQuestions(employeeAnswers) {
       console.log(employeeArray);
       //go back to the intial prompt
       roleQuestion();
+
     });
 }
 
@@ -150,7 +151,7 @@ function getEmployee(roleQuestion) {
     .then((employeeAnswers) => {
       console.log(employeeAnswers);
       if (roleQuestion === "Engineer") {
-        console.log("running engineer prompt");
+        //console.log("running engineer prompt");
         engineerQuestions(employeeAnswers);
       } else if (roleQuestion === "Manager") {
         console.log("running manager");
@@ -183,20 +184,9 @@ function roleQuestion() {
 
 roleQuestion();
 
-
-//     // else if(employeeAnswers.role === "Manager"){
-//     //   const manager = new Manager(employeeAnswer.name, employeeAnswer.id, employeeAnswer.officeNumber, employeeAnswer.emailAddress);
-//     //      employeeArray.push(manager);
-//     //  }else if(employeeAnswers.role === "Intern"){
-//     //      const intern = new Intern(employeeAnswer.name, employeeAnswer.id, employeeAnswer.school,employeeAnswer.emailAddress);
-//     //      employeeArray.push(employeeAnswers);
-//     // }
-//     // member(employeeArray);
-// });
-
 function member() {
   fs.existsSync(OUTPUT_DIR) || fs.mkdirSync(OUTPUT_DIR);
-  fs.writeFileSync(outputPath, render(getEmployee), "UTF-8");
+  fs.writeFileSync(outputPath, render(employeeArray), "UTF-8");
 }
 
 // After you have your html, you're now ready to create an HTML file using the HTML

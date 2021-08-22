@@ -21,13 +21,16 @@ getEmail(){
 }
 
 //getter to get id
-getID(){
+getId(){
     return this.id;
 }
 
 //getter of officeNumber
 getOffice(){
     return this.officeNumber;
+}
+getRole(){
+    return "Employee";
 }
 
 }
