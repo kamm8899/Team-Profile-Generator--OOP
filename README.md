@@ -40,7 +40,7 @@ The following video will demonstrate the code as well as running the applicaiton
 ScreenShot of Team Generator
 ![ScreenShot](./Assets/Team-Generator.png)
 
-[The video can be viewed through clicking on this link:](https://www.youtube.com/watch?v=29MpR3SmMBg)
+[The video can be viewed through clicking on this link:](https://www.youtube.com/watch?v=db2DhtCEPZc)
 
 
 ## Getting Started
