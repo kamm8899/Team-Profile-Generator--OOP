@@ -5,7 +5,7 @@ class Employee{
     constructor(name, id, emailAddress, officeNumber){
         this.id = id;
         this.emailAddress= emailAddress;
-        // this.officeNumber = officeNumber;
+        this.officeNumber = officeNumber;
         this.name = name;
         this.title = "Employee";
     }

@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator--oop",
+  "version": "1.0.0",
+  "description": "The intent of this repo(\"Team-Profile-Generator--OOP\")is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.",
+  "main": "app.js",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamm8899/Team-Profile-Generator--OOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamm8899/Team-Profile-Generator--OOP/issues"
+  },
+  "homepage": "https://github.com/kamm8899/Team-Profile-Generator--OOP#readme"
+}
