@@ -37,7 +37,8 @@ THEN I exit the application, and the HTML is generated
 
 The following video will demonstrate the code as well as running the applicaiton in the command line to show the outcome of the input in the browser:
 
-![ScreenShot of Team Generator ](./Assets/Team Generator.png);
+ScreenShot of Team Generator
+![ScreenShot](./Assets/Team Generator.png);
 
 [The video can be viewed through clicking on this link:](https://www.youtube.com/watch?v=29MpR3SmMBg)
 
